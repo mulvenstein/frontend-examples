@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Basic Angular Example</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="controller.js"></script>
+		<script src="service.js"></script>
+	</head>
+	<body>
+		<h1>Color Selector</h1>
+		<div ng-app="colorPicker" ng-controller="myCtrl">
+			<p>Select color values for red, green, and blue</p>
+			<p>
+				Red: <input type="number" min="0" max="255" ng-model="red">
+				Green: <input type="number" min="0" max="255" ng-model="green">
+				Blue: <input type="number" min="0" max="255" ng-model="blue">
+			</p>
+			<p>You entered: R={{red}}, G={{green}}, B={{blue}}</p>
+			<p>The hex value is: {{hexValue()}}</p>
+			<p>This is what your color looks like:</p>
+			<div class="color" style="background:{{hexValue()}};"></div>
+		</div>
+	</body>
+</html>

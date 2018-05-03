@@ -1,0 +1,45 @@
+/* To make the navbar have no white space around it */
+body {
+	margin: 0;
+}
+
+/* The navbar ul */
+.nav {
+	background-color: #333333;
+	height: 2.25em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/* The elements of the navbar*/
+li {
+	float: left;
+}
+
+/* Make the active button on the navbar green */
+.nav .active {
+	background-color: #218C26;	
+}
+
+/* The styling of the navbar elements */
+li a {
+	display: block;
+	color: white;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+
+/* Change the background of the elements hovered over that's not active */
+li a:hover:not(.active) {
+	background-color: #111111;
+}
+
+.content {
+	background: #CCCCCC;
+	padding: 2em;
+	width: 50%;
+	margin-top: 1em;
+	margin-left: 1em;
+}
