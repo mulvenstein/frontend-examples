@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+}
+
+.navbar {
+	background: #3F85F4;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 3.2em;
+	width: 100%;
+}
+
+.navbar li {
+	float: left;
+}
+
+.active {
+	background: #0748B2;
+}
+
+li a {
+	display: block;
+	color: white;
+	padding: 1em 2em;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background: #315CA0; 
+}
+
+.content {
+	width: 50%;
+	margin: auto;
+	margin-top: 2em;
+	padding: 5em;
+	background: #CCCCCC;
+	text-align: center;
+}

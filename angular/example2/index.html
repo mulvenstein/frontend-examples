@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Angular DOM</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="controller.js"></script>
+	</head>
+	<body>
+		<div ng-app="myApp" ng-controller="myCtrl">
+			<ul class="navbar">
+				<li><a href="#" ng-class="homeClass" ng-click="update('home')">Home</a></li>
+				<li><a href="#" ng-class="aboutClass" ng-click="update('about')">About Us</a></li>
+				<li><a href="#" ng-class="contactClass" ng-click="update('contact')">Contact Us</a></li>
+			</ul>
+			<div class="content" ng-show="homeClass=='active'">
+				<h1>Welcome to our site!</h1>
+				<p>To learn more about us, click on the the "About Us" tab</p>
+				<p>To get in touch, find our information in the "Contact Us" tab"</p>
+			</div>
+			<div class="content" ng-show="aboutClass=='active'">
+				<h1>About Us</h1>
+				<p>We are a site dedicated to showing contrived Angular examples.</p>
+				<p>This navbar was harder to configure with Angular than jQuery.</p>
+			</div>
+			<div class="content" ng-show="contactClass=='active'">
+				<h1>Contact Us</h1>
+				<p>Email: notarealemail@example.com</p>
+				<p>Phone: (555) 555-5555</p>
+			</div>
+		</div>
+	</body>
+</html>
