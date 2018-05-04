@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="controller.js"></script>
+	</head>
+	<body>
+		<h1>Enter a username and password</h1>
+		<form ng-app="loginApp" ng-controller="validateCtrl" name="myForm" novalidate>
+			<p ng-show="error" class="error">Invalid username or password</p>
+			<p ng-show="success" class="success">You successfully logged in</p>
+		    <label>Username:</label>
+		    <input type="text" name="user" ng-model="user" required><br>
+		    <label>Password:</label>
+		    <input type="password" name="pass" ng-model="pass" required><br>
+		    <button ng-click="validate()">Submit</button>
+		</form>
+	</body>
+</html>
