@@ -6,6 +6,6 @@
 	if ($username=="derrick" && $password=="hello123") {
 		echo "ok";
 	} else {
-		echo "nok";
+		echo "not okay";
 	}
 ?>
